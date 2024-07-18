@@ -36,6 +36,7 @@ $('.table').html(cartona);
 
 
 $('#searchName').on('input',function () {
+  $('.chartDisplay').css('display','none')
 
     let value=$('#searchName').val();
     cartona=`<thead>
@@ -60,6 +61,7 @@ $('#searchName').on('input',function () {
 }})
 
 $('#searchAmount').on('input',function () {
+  $('.chartDisplay').css('display','none')
 
     let amount=$('#searchAmount').val();
     cartona=`<thead>
@@ -82,22 +84,7 @@ $('#searchAmount').on('input',function () {
         $('.table').html(cartona);
 }})
 
-$('h1').on('click',function(){
-    let Ahmed='Ahmed Ali'
-    for (let i = 0; i < container.length; i++) {
-        if (container[i].customerName==Ahmed) {
-            cartona+=`<thead>
-        <th class="text-center" scope="col">${container[i].id}</th>
-        <th class="text-center" scope="col">${container[i].customerName}</th>
-        <th class="text-center" scope="col">${container[i].transactionDate}</th>
-        <th class="text-center" scope="col">${container[i].transactionAmount}</th>
-      </thead>`
-    console.log('ahmed aliiiiiii');
 
-        }
-}
-
-})
 
 $('#NamesCustomers').on('change',function () {
     let xValues=[]
