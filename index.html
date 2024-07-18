@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Fair</title>
+
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  </head>
+  <body>
+<h1 class="display-1 text-center">Transactions Table</h1>
+
+<div class="search container text-center d-flex justify-content-center align-items-center gap-5 mt-5">
+  <input id="searchName" class="form-control" type="text" placeholder="Filter by Name">
+  <input id="searchAmount" class="form-control" type="text" placeholder="Filter by Transaction amount">
+</div>
+
+<div class="filter container">
+  <select id="NamesCustomers" class="form-select mt-3" aria-label="Default select example">
+    <option selected>Or Pick a Customer from Menu</option>
+    <option value="1">Ahmed Ali</option>
+    <option value="2">Aya Elsayed</option>
+    <option value="3">Mina Adel</option>
+    <option value="4">Sarah Reda</option>
+    <option value="5">Mohamed Sayed</option>
+  </select>
+</div>
+
+   <div class="display container">
+    <table class="table mt-5">
+      <thead>
+        <th class="text-center" scope="col">ID</th>
+        <th class="text-center" scope="col">Name</th>
+        <th class="text-center" scope="col">Transaction Date</th>
+        <th class="text-center" scope="col">Amount</th>
+      </thead>
+    </table>
+   </div>
+  
+   <canvas class="chartDisplay m-auto mt-5" id="myChart" style="width:100%;max-width:700px;height: 250px;"></canvas>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/customerData.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
